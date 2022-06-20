@@ -5,10 +5,16 @@
 @import "normalize.css";
 @import './styles/general.css';
 
+/* pages styles */
+
+@import './components/pages/main/main.css';
+
 /* components styles */
 
 @import './components/shared/header/header.css';
-@import './components/shared/main/main.css';
+@import './components/shared/bread-crumbs/bread-crumbs.css';
+@import './components/shared/pagination/pagination.css';
+
 
 
 

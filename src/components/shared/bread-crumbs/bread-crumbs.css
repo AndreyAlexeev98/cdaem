@@ -1,16 +1,6 @@
-.news-list {
-  padding-top: 31px;
-}
-
-.news-list__title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1;
-  color: #1E2123;
-}
-
 .bread-crumbs {
   margin-bottom: 25px;
+  color: red;
 }
 
 .bread-crumbs__list {

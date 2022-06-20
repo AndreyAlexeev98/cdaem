@@ -1,0 +1,154 @@
+.news-list {
+  padding-top: 31px;
+  position: relative;
+}
+
+.news-list__title {
+  margin-bottom: 63px;
+}
+
+.news-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.news-list__item {
+  width: calc(100%/3 - 20px);
+}
+
+.news-card {
+  background-color: #FFFEFE;
+  border-radius: 10px;
+}
+
+.news-card__img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-card__content {
+  padding: 30px 20px 24px;
+}
+
+.news-card__title {
+  font-weight: 700;
+  line-height: 19px;
+  color: #1E2123;
+  margin-bottom: 15px;
+}
+
+.news-card__desc {
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+  margin-bottom: 25px;
+  max-height: 88px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.news-card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 2px solid #F8F8F8;
+}
+
+.news-card__date {
+  background: #F8F8F8;
+  border-radius: 18px;
+  padding: 10px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #8291A3;
+}
+
+.news-card__btn {
+  background: rgba(102, 78, 249, 0.1);
+  border-radius: 17px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #664EF9;
+}
+
+
+
+
+
+
+
+
+/* another components */
+
+
+
+
+
+
+
+.page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: #1E2123;
+}
+
+
+.news-list__search {
+  padding: 55px 135px 907px 97px;
+  background: linear-gradient(90deg, rgba(148, 175, 255, .1) 0%, rgba(78, 100, 249, .1) 94.5%);
+  border-radius: 40px;
+  position: absolute;
+  top: 31px;
+  right: -9%;
+  z-index: 1;
+}
+
+.search-news__input-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgb(0 96 206 / 5%);
+  border-radius: 20px;
+  width: 616px;
+  display: flex;
+}
+
+.search-news__input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 21px;
+  flex: 1;
+}
+
+.search-news__input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+}
+
+.search-news__btn {
+  background: #664EF9 !important;
+  border-radius: 19px;
+  border: none;
+  padding: 10px 18px;
+
+}
+
+.search-news__btn span {
+  width: 17px;
+  height: 17px;
+  background: url('/src/images/icons/search.svg') center center/cover no-repeat;
+  display: block;
+}
