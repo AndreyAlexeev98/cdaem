@@ -27,7 +27,17 @@ const NewsListPage = () => {
   const firstCountryIndex = lastCountryIndex - countriesPerPage;
   const currentCountry = countries.slice(firstCountryIndex, lastCountryIndex)
 
-  const paginate = pageNumber => setCurrentPage(pageNumber)
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+  // const prevPage = () => {if(currentPage !== 1){setCurrentPage(prev => prev - 1)}} 
+  // const nextPage = () => {if(currentPage !== 3){setCurrentPage(prev => prev + 1)}}
+
+  const prevPage = () => console.log(currentPage)
+
+  /* функционал переключения листов пагинации
+    const prevPage = () => {if(currentPage !== 1){setCurrentPage(prev => prev - 1)}} 
+    const nextPage = () => {if(currentPage !== 1){setCurrentPage(prev => prev + 1)}}
+   <button className='pagination__btn-prev' onClick={prevPage}>Prev Page</button>
+   <button className='pagination__btn-next' onClick={nextPage}>Next Page</button>*/
 
   return (
     <section className="news-list">
@@ -39,6 +49,8 @@ const NewsListPage = () => {
           countriesPerPage={countriesPerPage} 
           totalCountries={countries.length} 
           paginate={paginate}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       </div>
       <div className='news-list__search'>
