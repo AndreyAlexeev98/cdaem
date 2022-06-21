@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
-
-const Pagination = ({countriesPerPage, totalCountries, paginate, currentPage, setCurrentPage }) => {
+import { Link } from "react-router-dom";
+const Pagination = ({newsPerPage, totalNews, paginate, currentPage, setCurrentPage }) => {
 
   const pageNumbers = [];
-  const totalPageNumbers = Math.ceil(totalCountries / countriesPerPage)
+  const totalPageNumbers = Math.ceil(totalNews / newsPerPage)
 
 
   for (let i=1; i <= totalPageNumbers; i++ ) {
@@ -21,7 +20,7 @@ const Pagination = ({countriesPerPage, totalCountries, paginate, currentPage, se
         {
           pageNumbers.map(number => (
             <li className='pagination__item' key={number}>
-              <a className='pagination__link' href="#" onClick={() => paginate(number)}>{number}</a>
+              <Link className='pagination__link' to='#' onClick={() => paginate(number)} >{number}</Link>
             </li>
           ))
         }

@@ -1,6 +1,6 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-const NewsListList = ({countries, loading}) => {
+const NewsListComponent = ({news, loading}) => {
 
   if(loading) {
     return <h2>Loading news list...</h2> 
@@ -10,7 +10,7 @@ const NewsListList = ({countries, loading}) => {
     <div>
       <ul className='news-list__list'>
         {
-          countries.map((item, i) => (
+          news.map((item, i) => (
             <li className='news-list__item' key={item.id}>
               <div className='news-card'>
                 <img className='news-card__img' src={item.img} alt="Новость" />
@@ -19,7 +19,7 @@ const NewsListList = ({countries, loading}) => {
                     <p className='news-card__desc'>{item.description}</p>
                     <div className='news-card__footer'>
                       <div className='news-card__date'>{item.date}</div>
-                      <a href="#" className='news-card__btn'>Читать</a>
+                      <Link to='/news-this' className='news-card__btn'>Читать</Link>
                     </div>
                 </div>
               </div>
@@ -31,4 +31,4 @@ const NewsListList = ({countries, loading}) => {
   )
 }
 
-export default NewsListList
+export default NewsListComponent

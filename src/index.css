@@ -1,19 +1,24 @@
-/* general styles and fonts */
+/* settings styles and fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
 @import './styles/normolize.css';
 @import "normalize.css";
+
+/* layout styles */
+
 @import './styles/general.css';
+@import './layout/main.css';
 
 /* pages styles */
 
-@import './components/pages/main/main.css';
+@import './pages/news-list/news-list.page.css';
+@import './pages/news/news.page.css';
 
 /* components styles */
 
 @import './components/shared/header/header.css';
 @import './components/shared/bread-crumbs/bread-crumbs.css';
-@import './components/shared/pagination/pagination.css';
+@import './components/pagination/pagination.css';
 
 
 
