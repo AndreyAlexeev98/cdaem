@@ -97,6 +97,7 @@
 
 .header__logo {
   margin-right: 83px;
+  flex-shrink: 0;
 }
 
 .logo__img {

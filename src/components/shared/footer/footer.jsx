@@ -1,29 +1,21 @@
 import logo from '../../../images/icons/logo.svg';
 import './footer.css';
 // import icons
-import IconInsta from '../../../images/icons/insta.svg';
-import IconVk from '../../../images/icons/vk.svg';
-import IconFacebook from '../../../images/icons/facebook.svg';
-import IconVisa from '../../../images/icons/visa.png';
-import IconWebpay from '../../../images/icons/webpay.png';
-import IconVisaVer from '../../../images/icons/verified-by-visa.png';
-import IconMastercard from '../../../images/icons/mastercard.png';
-import IconSecurecode from '../../../images/icons/securecode.png';
-import IconBelkart from '../../../images/icons/belkart.png';
+import IconInsta from '../../../images/icons/socials/insta-black.svg';
+import IconVk from '../../../images/icons/socials/vk-black.svg';
+import IconFacebook from '../../../images/icons/socials/facebook-black.svg';
+import IconVisa from '../../../images/icons/payment/visa.png';
+import IconWebpay from '../../../images/icons/payment/webpay.png';
+import IconVisaVer from '../../../images/icons/payment/verified-by-visa.png';
+import IconMastercard from '../../../images/icons/payment/mastercard.png';
+import IconSecurecode from '../../../images/icons/payment/securecode.png';
+import IconBelkart from '../../../images/icons/payment/belkart.png';
 
 const Footer = (props) => {
 
-  // const [appFooter, setAppFooter] = useState({});
-
-  // useEffect(() => {
-  //   axios.get<IFooter>(API_URL + REST_API.footer).then((resp) => {
-  //     setAppFooter(resp.data);
-  //   });
-  // }, []);
-
   return (
-    <div className='footer container'>
-      <div className='footer__container'>
+    <footer className='footer'>
+      <div className='footer__container container'>
         <div className='footer__left'>
           <a href='#' className='logo footer__logo'>
             <img src={logo} className="logo__img" alt="logo" />
@@ -101,7 +93,7 @@ const Footer = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

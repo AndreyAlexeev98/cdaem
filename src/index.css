@@ -11,6 +11,7 @@
 
 /* pages styles */
 
+@import './pages/home/home.css';
 @import './pages/news-list/news-list.page.css';
 @import './pages/news/news.page.css';
 
@@ -18,17 +19,6 @@
 
 @import './components/shared/header/header.css';
 @import './components/shared/bread-crumbs/bread-crumbs.css';
+@import './components/component-share/share.css';
 @import './components/pagination/pagination.css';
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import './components/news-list/news-list.css';

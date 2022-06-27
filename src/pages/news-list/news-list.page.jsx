@@ -29,7 +29,7 @@ const NewsListPage = () => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <section className="news-list">
+    <section className="news-list container">
       <BreadCrumbs />
       <div className="page-title news-list__title">Новости</div>
       <NewsListComponent news={currentNews} loading={loading}/>

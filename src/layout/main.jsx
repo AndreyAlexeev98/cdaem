@@ -8,7 +8,7 @@ const Layout = () => {
   return(
     <div className="wrapper">
       <Header state={state} />
-      <main className="main container">
+      <main className="main">
         <Outlet />
       </main>
       <Footer state={state}/> 
