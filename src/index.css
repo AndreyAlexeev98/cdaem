@@ -14,6 +14,9 @@
 @import './pages/home/home.css';
 @import './pages/news-list/news-list.page.css';
 @import './pages/news/news.page.css';
+@import './pages/not-found/not-found.css';
+@import './pages/contacts/contacts.css';
+@import './pages/login/login.css';
 
 /* components styles */
 

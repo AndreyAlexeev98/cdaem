@@ -19,7 +19,7 @@ const NewsListComponent = ({news, loading}) => {
                     <p className='news-card__desc'>{item.preview}</p>
                     <div className='news-card__footer'>
                       <div className='news-card__date'>{item.date}</div>
-                      <Link to={`${item.id}`} className='news-card__btn'>Читать</Link>
+                      <Link to={`/news-list/${item.id}`} className='news-card__btn'>Читать</Link>
                     </div>
                 </div>
               </div>
