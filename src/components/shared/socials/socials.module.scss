@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 28px;
+    color: inherit;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    column-gap: 22px;
+  }
+  &__item {
+    color: inherit;
+    transition: color .3s;
+    &:hover {
+      transition: color .3s;
+    }
+  }
+  &__link {
+    display: flex;
+  }
+  .socials__img {
+    height: 100%;
+  }
+}
+
+
+
+
+

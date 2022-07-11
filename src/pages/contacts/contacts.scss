@@ -1,0 +1,312 @@
+.contacts {
+  background: url("/images/pictures/mask-group.svg") center center/cover no-repeat,
+  linear-gradient(0deg, rgba(126, 106, 243, 1) 1.04%, rgba(101, 64, 205, 1) 100%);
+  padding: 77px 0 95px;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts__info {
+  color: #fff;
+  width: 45%;
+  margin-right: 31px;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.contacts__data {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.data__item {
+  display: flex;
+  align-items: center;
+}
+
+.data__item .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.data__item .icon:after {
+  content: '';
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.data__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.data__item--address .icon:after {
+  background-image: url('/images/icons/pointer-white.svg');
+  width: 13px;
+  height: 16px;
+}
+
+.data__item--phones .icon:after {
+  background-image: url('/images/icons/mobile-white.svg');
+  width: 9px;
+  height: 15px;
+}
+
+.data__item--email .icon:after {
+  background-image: url('/images/icons/mail-white.svg');
+  width: 15px;
+  height: 12px;
+}
+
+.data__item--time .icon:after {
+  background-image: url('/images/icons/clock-white.svg');
+  width: 15px;
+  height: 15px;
+}
+
+.data__item--phones .text {
+  display: flex;
+  align-items: center;
+}
+
+.data__item--phones .data__link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data__item--phones .data__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.data__item--phones .phone {
+  margin-right: 15px;
+}
+
+.data__item--phones .messanger-link {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.data__item .viber {
+  background-image: url('/images/icons/messengers/viber-white.svg');
+  width: 14px;
+  height: 15px;
+}
+
+.data__item .telegram {
+  background-image: url('/images/icons/messengers/telegram-white.svg');
+  width: 14px;
+  height: 12px;
+}
+
+.data__item .whatsapp {
+  background-image: url('/images/icons/messengers/whatsapp-white.svg');
+  width: 14px;
+  height: 14px;
+}
+
+.data__item--email {
+  text-decoration: underline;
+}
+
+.data__item--time .small {
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.contacts__requisites {
+  margin-bottom: 39px;
+}
+
+.contacts__warning {
+  background: rgba(80, 57, 189, 0.5);
+  border-radius: 10px;
+  padding: 21px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__warning .text {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__warning .text:before {
+  content: '';
+  background-image: url('/images/icons/exclamation-point.svg');
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 22px;
+  flex-shrink: 0;
+}
+
+.contacts__form {
+  background: #FFFEFE;
+  box-shadow: 0px 20px 40px rgb(39 95 158 / 20%);
+  border-radius: 10px;
+  padding: 40px 37px 44px;
+  margin-right: 64px;
+}
+
+.form__row {
+ display: flex;
+ gap: 30px;
+}
+
+.form__row--mb30 {
+  margin-bottom: 30px;
+}
+
+.form__row--mb40 {
+  margin-bottom: 40px;
+}
+
+.form__row--center {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+}
+
+.input__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+  margin-bottom: 15px;
+}
+
+.input__label {
+  background: #F8F8F8;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  padding: 15px 20px;
+  display: flex;
+  transition: border-color .3s;
+}
+
+.input__label:focus, 
+.input__label:focus-visible,
+.input__label:hover {
+  border: 2px solid rgba(102, 78, 249, 0.8) !important;
+}
+
+.input__label:focus .input__icon--name, 
+.input__label:focus-visible .input__icon--name,
+.input__label:hover .input__icon--name {
+  background-image: url("/images/icons/user-purple.svg");
+}
+
+.input__label:focus .input__icon--email, 
+.input__label:focus-visible .input__icon--email,
+.input__label:hover .input__icon--email {
+  background-image: url("/images/icons/mail-purple.svg")
+}
+
+.input__icon {
+  margin-right: 15px;
+  background: center center/cover no-repeat;
+}
+
+
+.input__icon--name {
+  background-image: url("/images/icons/user-grey.svg");
+  will-change: background-image;
+  width: 20px;
+  height: 20px;
+}
+
+.input__icon--email {
+  background-image: url("/images/icons/mail-grey.svg");
+  will-change: background-image;
+  width: 18px;
+  height: 18px;
+}
+
+.input__elem {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1E2123;
+}
+
+.input__elem::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+}
+
+.input__elem--textarea {
+  resize: none;
+  min-height: 200px;
+  width: 100%;
+}
+
+.form__btn {
+  padding: 12px 56px;
+  background-color: #664EF9;
+  border-radius: 33px;
+  border: none;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.form__btn:hover {
+  background-color: #5C35F9;
+}
+
+.contacts__socials_list {
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.contacts__socials_item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+  color: #fff;
+  transition: color .3s;
+  &:hover {
+    color: #000;
+    transition: color .3s;
+  }
+}
+
+

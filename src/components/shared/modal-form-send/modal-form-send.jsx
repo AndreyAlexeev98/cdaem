@@ -1,6 +1,7 @@
 import {useEffect, useMemo} from 'react';
 import { createPortal } from 'react-dom';
-import style from './modal-form-send.module.css'
+
+import style from './modal-form-send.module.scss'
 
 const modalRootElement = document.querySelector('#modal');
 

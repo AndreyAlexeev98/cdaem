@@ -1,5 +1,7 @@
-import Modal from "../../components/shared/modal-form-send/modal-form-send.jsx"
 import { useState } from "react";
+
+import Modal from "../../components/shared/modal-form-send/modal-form-send.jsx";
+import Socials from "../../components/shared/socials/socials.jsx";
 
 const Contacts = () => {
 
@@ -86,25 +88,7 @@ const Contacts = () => {
           </form> 
         </div>
         <div className="contacts__socials">
-          <div className='socials'>
-            <ul className='socials__list'>
-              <li className='socials__item'>
-                <a className='socials__link' href="#">
-                  <span className="socials__img socials__img--insta">1</span>
-                </a>
-              </li>
-              <li className='socials__item'>
-                <a className='socials__link' href="#">
-                  <span className="socials__img socials__img--vk"></span>
-                </a>
-              </li>
-              <li className='socials__item'>
-                <a className='socials__link' href="#">
-                  <span className="socials__img socials__img--facebook"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <Socials contextClassList='contacts__socials_list' contextClassItem='contacts__socials_item' iconsSize='20' />
         </div>
       </div>
       <Modal open={open} onClose={()=> setOpen(false)}>Мы свяжемся с вами в ближайшее время.</Modal>

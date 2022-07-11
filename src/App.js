@@ -1,9 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-// import generalStyle from './App.module.css';
-// import axios from 'axios';
-// import state from './data/state.js'
-
 import Layout from "./layout/main.jsx"
 import SignInUp from "./layout/sign-in-up.jsx"
 
@@ -16,10 +12,7 @@ import Login from "./pages/login/login.jsx"
 import SignUp from "./pages/signup/signup.jsx";
 import Confirm from "./pages/confirm/confirm.jsx";
 
-
-
 function App() {
-
   return (
     <Router>
       <Routes>

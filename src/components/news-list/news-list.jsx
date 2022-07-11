@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import style from './news-list.module.scss'
+
 const NewsListComponent = ({news, loading}) => {
 
   if(loading) {
@@ -8,18 +10,18 @@ const NewsListComponent = ({news, loading}) => {
 
   return (
     <div>
-      <ul className='news-list__list'>
+      <ul className={style.news_list__list}>
         {
-          news.map((item, i) => (
-            <li className='news-list__item' key={item.id}>
-              <div className='news-card'>
-                <img className='news-card__img' src={item.img} alt="Новость" />
-                <div className='news-card__content'>
-                  <div className='news-card__title'>{item.title}</div>
-                    <p className='news-card__desc'>{item.preview}</p>
-                    <div className='news-card__footer'>
-                      <div className='news-card__date'>{item.date}</div>
-                      <Link to={`/news-list/${item.id}`} className='news-card__btn'>Читать</Link>
+          news.map((item) => (
+            <li className={style.news_list__item} key={item.id}>
+              <div className={style.news_card}>
+                <img className={style.news_card__img} src={item.img} alt="Новость" />
+                <div className={style.news_card__content}>
+                  <div className={style.news_card__title}>{item.title}</div>
+                    <p className={style.news_card__desc}>{item.preview}</p>
+                    <div className={style.news_card__footer}>
+                      <div className={style.news_card__date}>{item.date}</div>
+                      <Link to={`/news-list/${item.id}`} className={style.news_card__btn}>Читать</Link>
                     </div>
                 </div>
               </div>

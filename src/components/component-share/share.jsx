@@ -1,28 +1,42 @@
-import iconVk from '../../images/icons/socials/vk-purple.svg';
-import iconFb from '../../images/icons/socials/facebook-purple.svg';
-import iconViber from '../../images/icons/messengers/viber-purple.svg';
-import iconTelegram from '../../images/icons/messengers/telegram-purple.svg';
-import iconWhatsApp from '../../images/icons/messengers/whatsapp-purple.svg';
+import IconVk from '../../components/shared/icons/vk/vk.jsx'
+import IconFacebook from '../../components/shared/icons/facebook/facebook.jsx'
+import IconViber from '../../components/shared/icons/viber/viber.jsx'
+import IconTelegram from '../../components/shared/icons/telegram/telegram.jsx'
+import IconWhatsApp from '../../components/shared/icons/whatsApp/whatsApp.jsx'
+
+import style from './share.module.scss'
 
 const ShareComponent = () => {
 
-  const sharedElems = [
-    {icon: iconVk, link: 'https://vk.com', alt:'vk', id: '1'},
-    {icon: iconFb, link: 'https://fb.com', alt:'vk', id: '2'},
-    {icon: iconViber, link: 'viber://add?number=#', alt:'viber', id: '3'},
-    {icon: iconTelegram, link: 'https://t.me/#', alt:'telegram', id: '4'},
-    {icon: iconWhatsApp, link: 'whatsapp://send?phone=#&text=#', alt:'whats app', id: '5'},
-  ];
-
   return (
-    <div className="share">
-      <div className="share__title">Поделиться</div>
-      <ul className="share__list">
-        {
-          sharedElems.map((item, i) => (
-            <li className="share__item"key={item.id}><a href={item.link} target="_blank" className="share__link"><img className="share__img" src={item.icon} alt={item.alt} /></a></li>
-          ))
-        }
+    <div className={style.share}>
+      <div className={style.share__title}>Поделиться</div>
+      <ul className={style.share__list}>
+        <li className={style.share__item}>
+          <a href="https://vk.com" target="_blank" className={style.share__link}>
+            <IconVk className={style.share__img} width='18px' height='18px' />
+          </a>
+        </li>
+        <li className={style.share__item}>
+          <a href="https://fb.com" target="_blank" className={style.share__link}>
+            <IconFacebook className={style.share__img} />
+          </a>
+        </li>
+        <li className={style.share__item}>
+          <a href="viber://add?number=#" target="_blank" className={style.share__link}>
+            <IconViber className={style.share__img} width='22px' height='22px' />
+          </a>
+        </li>
+        <li className={style.share__item}>
+          <a href="https://t.me/#" target="_blank" className={style.share__link}>
+            <IconTelegram className={style.share__img} />
+          </a>
+        </li>
+        <li className={style.share__item}>
+          <a href="whatsapp://send?phone=#&text=#" target="_blank" className={style.share__link}>
+            <IconWhatsApp className={style.share__img} />
+          </a>
+        </li>
       </ul>
     </div>
   )

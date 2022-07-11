@@ -1,0 +1,22 @@
+.nav {
+  :global {
+    .active {
+      color: #1E2123;
+      transition: color .3s;
+      cursor: default;
+    }
+  } 
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  color: inherit;
+  transition: color .3s;
+  &:hover {
+    color: #1E2123;
+    transition: color .3s;
+  }
+}

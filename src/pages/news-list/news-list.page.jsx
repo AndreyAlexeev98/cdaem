@@ -1,8 +1,12 @@
 import {useState, useEffect} from 'react';
+import classnames from 'classnames';
+
 import BreadCrumbs from '../../components/shared/bread-crumbs/bread-crumbs.jsx';
 import NewsListComponent from '../../components/news-list/news-list.jsx';
 import NewsListData from '../../data/news-list.js';
 import Pagination from '../../components/pagination/pagination.jsx';
+
+import style from './news-list.page.module.scss';
 
 const NewsListPage = () => {
 
@@ -29,11 +33,11 @@ const NewsListPage = () => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <section className="news-list container">
+    <section className={classnames(style.news_list, 'container')}>
       <BreadCrumbs />
-      <div className="page-title news-list__title">Новости</div>
+      <div className={classnames('page-title', style.news_list__title)}>Новости</div>
       <NewsListComponent news={currentNews} loading={loading}/>
-      <div className='news-list__pagination'>
+      <div className={style.news_list__pagination}>
         <Pagination 
           newsPerPage={newsPerPage} 
           totalNews={news.length} 
@@ -42,11 +46,11 @@ const NewsListPage = () => {
           setCurrentPage={setCurrentPage}
         />
       </div>
-      <div className='news-list__search'>
-        <div className='search-news'>
-          <div className='search-news__input-wrapper'>
-            <input className='search-news__input' type="text" placeholder='Поиск по статьям' />
-            <button className='search-news__btn' type="button">
+      <div className={style.news_list__search}>
+        <div className={style.search_news}>
+          <div className={style.search_news__input_wrapper}>
+            <input className={style.search_news__input} type="text" placeholder='Поиск по статьям' />
+            <button className={style.search_news__btn} type="button">
               <span></span>
             </button>
           </div>

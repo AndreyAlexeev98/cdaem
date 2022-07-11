@@ -1,19 +1,13 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
-
 import ReCAPTCHA from "react-google-recaptcha";
-
-import style from './signup.module.css'
 
 import userIcon from '../../images/icons/user-grey.svg';
 import mailIcon from '../../images/icons/mail-grey.svg';
 import passwordIcon from '../../images/icons/password.svg';
 
-
-
-
+import style from './signup.module.css'
 
 const SignUp = () => {
 
@@ -22,7 +16,6 @@ const SignUp = () => {
     password: yup.string().typeError('Должно быть строкой').required('Обязательное поле'),
     confirmPassword: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают')
   })
-
 
   return (
     <div className={style.signup}>
@@ -42,7 +35,6 @@ const SignUp = () => {
           >
             {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty }) => (
               <div className={style.signup__form}>
-
                 <div className={style.form__row}>
                   <label htmlFor={`login`} className={style.form__label_input}>
                     <img src={userIcon} className={style.form__icon} />
@@ -50,7 +42,6 @@ const SignUp = () => {
                     {touched.login && errors.login && <p className={'error'}>{errors.login}</p>}
                   </label>
                 </div>
-
                 <div className={style.form__row}>
                   <label htmlFor={`email`}  className={style.form__label_input}>
                     <img src={mailIcon} className={style.form__icon} />
@@ -58,7 +49,6 @@ const SignUp = () => {
                     {touched.email && errors.email && <p className={'error'}>{errors.email}</p>}
                   </label>
                 </div>
-
                 <div className={style.form__row}>
                   <label htmlFor={`password`} className={style.form__label_input}>
                     <img src={passwordIcon} className={style.form__icon} />
@@ -66,7 +56,6 @@ const SignUp = () => {
                     {touched.password && errors.password && <p className={'error'}>{errors.password}</p>}
                   </label>
                 </div>
-
                 <div className={style.form__row}>
                   <label htmlFor={`confirmPassword`} className={style.form__label_input}>
                     <img src={passwordIcon} className={style.form__icon} />
@@ -74,24 +63,15 @@ const SignUp = () => {
                     {touched.confirmPassword && errors.confirmPassword && <p className={'error'}>{errors.confirmPassword}</p>}
                   </label>
                 </div>
-
                 <div className={style.form__row}>
                   <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" />
                 </div>
-
                 <div className={style.form__row}>
                   <button disabled={!isValid && !dirty} onClick={handleSubmit} className={style.form__btn} type={`submit`}>Зарегистрироваться</button>
-                  {/* <Link className={style.form__btn} to='confirm'>Зарегистрироваться</Link> */}
-                  {/* <input className={style.form__btn} type="submit" value="Зарегистрироваться" /> */}
                 </div>
-
-
-
               </div>
             ) }
           </Formik>
-
-
         <div className={style.signup__text}>
           <div className={style.text_title}>Пользователь обязуется:</div>
             <ul className={style.text_list}>

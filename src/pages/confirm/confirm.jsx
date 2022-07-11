@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import style from './confirm.module.css'
+
+import style from './confirm.module.scss';
 
 const Confirm = () => {
   return (

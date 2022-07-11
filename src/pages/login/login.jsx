@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Checkbox from "../../components/checkbox/checkbox.jsx";
 
+import Checkbox from "../../components/checkbox/checkbox.jsx";
 import userIcon from '../../images/icons/user-grey.svg';
 import passwordIcon from '../../images/icons/password.svg';
 

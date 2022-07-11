@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1E2123;
+}
+
+.item {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 15px;
+  width: 13px;
+  height: 15px;
+  color: #FFD54F;
+}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 const Pagination = ({newsPerPage, totalNews, paginate, currentPage, setCurrentPage }) => {
 
   const pageNumbers = [];

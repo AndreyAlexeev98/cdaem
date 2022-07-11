@@ -1,5 +1,3 @@
-import './checkbox.css';
-
 const Checkbox = ({name}) => {
   return (
     <div>
