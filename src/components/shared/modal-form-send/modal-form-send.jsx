@@ -8,9 +8,8 @@ const modalRootElement = document.querySelector('#modal');
 const ModalFormSend = (props) => {
 
   const {open, onClose} = props;
-
   const element = useMemo(() => document.createElement('div'), []);
-  
+
   useEffect(() => {
     if(open) {
       modalRootElement.appendChild(element);
@@ -21,11 +20,10 @@ const ModalFormSend = (props) => {
     }
   });
 
-
   if(open) {
     return createPortal (
-      <div className={style.modal}>
-        <div className={style.modal__card}>
+      <div className={style.modal} onClick={onClose}>
+        <div className={style.modal__card} onClick={e => e.stopPropagation()}>
           <div className={style.modal__title}>Ваше письмо отправлено!</div>
           <div className={style.modal__text}>{props.children}</div>
           <button onClick={onClose} className={style.modal__btn}>Закрыть окно</button>
@@ -34,10 +32,7 @@ const ModalFormSend = (props) => {
       element
     )
   };
-
   return null;
-  
-
 }
 
 export default ModalFormSend

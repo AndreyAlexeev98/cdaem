@@ -1,0 +1,172 @@
+.root {
+  background: url("/images/pictures/mask-group.svg") center center/cover no-repeat,
+  linear-gradient(0deg, rgba(126, 106, 243, 1) 1.04%, rgba(101, 64, 205, 1) 100%);
+  padding: 77px 0 95px;
+}
+
+.container {
+  display: flex;
+}
+
+.info {
+  color: #fff;
+  width: 45%;
+  margin-right: 31px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.data {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.data__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.data__item .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  &:after {
+    content: '';
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.data__item_address .icon:after {
+  background-image: url('/images/icons/pointer-white.svg');
+  width: 13px;
+  height: 16px;
+}
+
+.data__item_phones .icon:after {
+  background-image: url('/images/icons/mobile-white.svg');
+  width: 9px;
+  height: 15px;
+}
+
+.data__item_email .icon:after {
+  background-image: url('/images/icons/mail-white.svg');
+  width: 15px;
+  height: 12px;
+}
+
+.data__item_time .icon:after {
+  background-image: url('/images/icons/clock-white.svg');
+  width: 15px;
+  height: 15px;
+}
+
+.data__item_phones .text {
+  display: flex;
+  align-items: center;
+}
+
+.data__item_phones .phone {
+  margin-right: 15px;
+}
+
+.data__item_email {
+  text-decoration: underline;
+}
+
+.data__item_time .small {
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.requisites {
+  margin-bottom: 39px;
+}
+
+.warning {
+  background: rgba(80, 57, 189, 0.5);
+  border-radius: 10px;
+  padding: 21px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.warning .text {
+  display: flex;
+  align-items: center;
+}
+
+.warning .text:before {
+  content: '';
+  background-image: url('/images/icons/exclamation-point.svg');
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 22px;
+  flex-shrink: 0;
+}
+
+.form {
+  background: #FFFEFE;
+  box-shadow: 0px 20px 40px rgb(39 95 158 / 20%);
+  border-radius: 10px;
+  padding: 40px 37px 44px;
+  margin-right: 64px;
+}
+
+.socials_list {
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.socials_item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+  color: #fff;
+  transition: color .3s;
+  &:hover {
+    color: #000;
+    transition: color .3s;
+  }
+}
+
+.messangers_list {
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.messangers_item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 7px;
+  color: #fff;
+  transition: color 0.3s;
+  &:hover {
+    color: #000;
+    transition: color .3s;
+  }
+}

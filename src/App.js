@@ -10,6 +10,7 @@ import NotFound from "./pages/not-found/not-found.jsx";
 import Contacts from "./pages/contacts/contacts.jsx"
 import Login from "./pages/login/login.jsx"
 import SignUp from "./pages/signup/signup.jsx";
+// import SignUp from "./pages/signup/test-context.jsx";
 import Confirm from "./pages/confirm/confirm.jsx";
 
 function App() {

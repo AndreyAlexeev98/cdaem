@@ -70,6 +70,10 @@
     white-space: nowrap;
     cursor: pointer;
     margin-bottom: 8px;
+    transition: color .3s;
+    &:hover {
+      color: #664EF9;
+    }
   }
   &__link {
     text-decoration: none;
