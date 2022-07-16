@@ -19,6 +19,7 @@
   color: rgba(104, 104, 104, .3);
   &:focus,
   &:focus-visible,
+  &:focus-within,
   &:hover {
     transition: color .3s, border-color .3s, background-color .3s;
     border-color: rgba(102, 78, 249, 0.8);

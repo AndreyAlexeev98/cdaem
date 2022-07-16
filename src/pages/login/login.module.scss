@@ -1,8 +1,8 @@
-.login {
+.root {
   max-width: 306px;
 }
 
-.login__title {
+.title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -11,7 +11,7 @@
   margin-bottom: 15px;
 }
 
-.login__text {
+.text {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -21,7 +21,7 @@
   display: inline-block;
 }
 
-.login__form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -36,77 +36,37 @@
   width: 100%;
 }
 
-.form__row--last {
+.form__row_last {
   margin-top: 18px;
-}
-
-.form__label-input {
-  background-color: #F7F7F7;
-  border-radius: 30px;
-  padding: 15px 25px;
   display: flex;
-  align-items: center;
-  border: 2px solid transparent;
-  transition: border-color .3s, background-color .3s;
-  gap: 20px;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-.form__label-input:hover,
-.form__label-input:focus,
-.form__label-input:active {
-  background-color: #FFFFFF;
-  border-color: rgba(78, 100, 249, 0.8);
-}
-
-.form__icon {
-  width: 20px;
-  height: 20px;
-}
-
-.form__input {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1E2123;
-}
-
-.form__input::placeholder {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #686868;
-}
-
-.form__label-checkbox {
+.form__label_checkbox {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.form__label-checkbox{
   font-size: 14px;
   line-height: 20px;
   color: #686868;
 }
 
-.login__link {
+.link {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #664EF9;
   transition: color .3s;
-}
-
-.login__link:hover {
-  color: #5C35F9;
+  &:hover {
+    color: #5C35F9;
+  }
 }
 
 .form__btn {
   background-color: #FFD54F;
   border-radius: 33px;
+  border: none;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -117,13 +77,46 @@
   line-height: 24px;
   color: #1E2123;
   transition: background-color .3s;
+  cursor: pointer;
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: #E6E6CD;
+  }
+  &[disabled]:hover {
+    background-color: #808080;
+  }
+  &:hover {
+    background-color: #FEC100;
+  }
 }
 
-.form__btn:hover {
-  background-color: #FEC100;
+.form__btn_error {
+  border-radius: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: default;
+  border: none;
+  color: #fff;
+  background-color: #EB5757;
+  span {
+    margin-right: 15px;
+  }
+} 
+
+.icon_error_message {
+  color: #FFFFFF;
+  opacity: 0.5;
+  width: 21px;
+  height: 20px;
 }
 
-.login__footer {
+.footer {
   font-size: 14px;
   line-height: 17px;
   text-align: center;

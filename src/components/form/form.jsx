@@ -59,8 +59,8 @@ const Form = ( {openModal} ) => {
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className={classNames(style.form__row, style.form__row_mb30)} >
-          <Input  name='name' type='text' placeholder='Введите имя' title='Ваше имя' icon={<IconUser />} required={true} control={control} />
-          <Input name='email' type='email' placeholder='Введите email' title='Ваша электронная почта' icon={<IconMail />} required={true} control={control} />
+          <Input name='name' type='text' placeholder='Введите имя' title='Ваше имя' icon={<IconUser />} required control={control} />
+          <Input name='email' type='email' placeholder='Введите email' title='Ваша электронная почта' icon={<IconMail />} required control={control} />
         </div>
         <div className={classNames(style.form__row, style.form__row_mb40)}>
           <div className={style.input}>
