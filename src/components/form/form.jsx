@@ -1,16 +1,12 @@
 import React from "react";
 import classNames from "classnames";
-import { useState } from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import Modal from "../shared/modal-form-send/modal-form-send.jsx";
-import Socials from "../shared/socials/socials.jsx";
 import Input from "../shared/Input/Input.jsx";
 import IconUser from "../shared/icons/user/user.jsx";
 import IconMail from "../shared/icons/mail/mail.jsx";
-import Messangers from "../shared/messengers/messengers.jsx"
 
 import style from "./form.module.scss";
 
@@ -75,7 +71,6 @@ const Form = ( {openModal} ) => {
         </div>
       </form> 
     </FormProvider>
-      // <Modal open={open} onClose={()=> setOpen(false)}>Мы свяжемся с вами в ближайшее время.</Modal>
   )
 }
 

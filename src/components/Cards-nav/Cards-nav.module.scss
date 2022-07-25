@@ -1,0 +1,118 @@
+.list {
+  align-self: flex-start;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "A A A A A B B B B"
+    "C C C D D D D D D";
+}
+
+.item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(0px 20px 40px rgba(135, 124, 202, 0.15));
+  min-height: 270px;
+  &:nth-child(1) {
+    grid-area: A;
+  }
+  &:nth-child(2) {
+    grid-area: B;
+  }
+  &:nth-child(3) {
+    grid-area: C;
+  }
+  &:nth-child(4) {
+    grid-area: D;
+  }
+}
+
+.wrapper {
+  padding: 37px 21px 19px 37px;
+  background-color: rgba(30, 33, 35, .4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #9D94FF 0%, #6B50E9 94.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 21px;
+}
+
+.description {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  margin-top: 21px;
+  display: flex;
+  column-gap: 16px;
+  row-gap: 14px;
+  flex-wrap: wrap;
+}
+
+.text_btn {
+  background-color: #664EF9;
+  border-radius: 16px;
+  padding: 8px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: background-color .3s, color .3s;
+  &:hover {
+    background-color: #612BFB;
+    transition: background-color .3s, color .3s;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.btn {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color .3s, color .3s, border-color .3s;
+  flex-shrink: 0;
+  &:hover {
+    background-color: rgba(102, 78, 249, 0.1);
+    color: #664EF9;
+    border-color: currentColor;
+    transition: background-color .3s, color .3s, border-color .3s;
+  }
+}
+
+.btn_icon {
+  width: 7px;
+  height: 14px;
+}

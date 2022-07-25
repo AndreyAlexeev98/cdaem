@@ -1,0 +1,20 @@
+.root {
+  padding: 84px 0 11px;
+}
+
+.block {
+  display: flex;
+  column-gap: 30px;
+}
+
+.decor {
+  margin-top: 42px;
+  color: #FFD54F;
+  width: 70px;
+  height: 70px;
+  margin-left: -15px;
+}
+
+.cards_nav {
+  align-self: flex-start;
+}
