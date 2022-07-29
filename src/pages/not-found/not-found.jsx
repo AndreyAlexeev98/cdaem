@@ -6,7 +6,7 @@ const NotFound = () => {
       <div className="container">
         <div className="not-found__container">
         <div className="not-found__decor not-found__decor--top">
-          <div className="decor-dots"></div>
+          <div className="decor-dots" />
         </div>
         <div className="not-found__content">
           <div className="not-found__left">
@@ -17,7 +17,7 @@ const NotFound = () => {
           <div className="not-found__right">404</div>
         </div>
         <div className="not-found__decor not-found__decor--bottom">
-          <div className="decor-dots"></div>
+          <div className="decor-dots" />
         </div>
         </div>
       </div>

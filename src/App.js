@@ -1,17 +1,16 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-import Layout from "./layout/main.jsx"
-import SignInUp from "./layout/sign-in-up.jsx"
+import Layout from "./layout/Main"
+import SignInUp from "./layout/Sign-in-up"
 
-import Home from "./pages/home/home.jsx";
-import NewsListPage from "./pages/news-list/news-list.page.jsx";
-import NewsPage from './pages/news/news.page.jsx'; 
-import NotFound from "./pages/not-found/not-found.jsx";
-import Contacts from "./pages/contacts/contacts.jsx"
-import Login from "./pages/login/login.jsx"
-import SignUp from "./pages/signup/signup.jsx";
-// import SignUp from "./pages/signup/test-context.jsx";
-import Confirm from "./pages/confirm/confirm.jsx";
+import Home from "./pages/Home/Home";
+import NewsListPage from "./pages/News-list/News-list.page";
+import NewsPage from './pages/News/News.page'; 
+import NotFound from "./pages/Not-found/Not-found";
+import Contacts from "./pages/Contacts/Contacts"
+import Login from "./pages/Login/Login"
+import SignUp from "./pages/Signup/Signup";
+import Confirm from "./pages/Confirm/Confirm";
 
 function App() {
   return (
@@ -21,8 +20,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="news-list" element={<NewsListPage />} />
           <Route path="news-list/:id" element={<NewsPage />} />
-          <Route index path="*" element={<NotFound />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path='/login' element={<SignInUp />}>
           <Route index element={<Login />} />

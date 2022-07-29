@@ -1,9 +1,11 @@
-import { NavLink } from 'react-router-dom';
-
-import Hero from '../../components/hero/hero';
+import Hero from '../../components/Hero/Hero';
 import NavSection from '../../components/Nav-section/Nav-section';
+import SectionRent from '../../components/Section-rent/Section-rent';
+import SectionFullWidth from '../../components/Section-fullWidth/Section-fullWidth';
+import SectionAdvantages from '../../components/Section-advantages/Section-advantages';
+import SectionAbout from '../../components/Section-about/Section-about';
 
-import style from './home.module.scss';
+import style from './Home.module.scss';
 
 const Home = () => {
   return (
@@ -11,10 +13,12 @@ const Home = () => {
       <div className='container'>
         <Hero />
         <NavSection />
+        <SectionRent />
       </div>
-      <section className='advanced'></section>
+      <SectionFullWidth className={style.home_section_full_width} decor='true' title='Поиск квартир на карте' subtitle='Ищите квартиры на сутки в центре города, возле парка или в живописном районе' />
       <div className='container'>
-        <h1>Home page</h1>
+        <SectionAdvantages />
+        <SectionAbout />
       </div>
       
     </div>

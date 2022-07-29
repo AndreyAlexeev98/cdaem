@@ -1,16 +1,16 @@
 import classNames from "classnames";
 
-import Menu from '../menu/menu.jsx';
-import MENU_FOOTER from '../../../data/menu-for-footer.js';
-import MENU_FOOTER_OPEN from '../../../data/menu-for-footer-open.js';
-import IconMainLogo from '../main-logo/main-logo.jsx';
-import AnotherNavList from '../another-nav-list/another-nav-list.jsx';
-import NAV_FOR_FOOTER from '../../../data/nav-for-footer.js';
-import Requisites from '../../requisites/requisites.jsx';
-import Socials from '../socials/socials.jsx';
-import Payment from '../../payment/payment.jsx';
+import Menu from '../Menu/Menu';
+import MENU_FOOTER from '../../../data/menu-for-footer';
+import MENU_FOOTER_OPEN from '../../../data/menu-for-footer-open';
+import IconMainLogo from '../Main-logo/Main-logo';
+import AnotherNavList from '../Another-nav-list/Another-nav-list';
+import NAV_FOR_FOOTER from '../../../data/nav-for-footer';
+import Requisites from '../../Requisites/Requisites';
+import Socials from '../Socials/Socials';
+import Payment from '../../Payment/Payment';
 
-import style from './footer.module.scss'
+import style from './Footer.module.scss'
 
 const Footer = () => {
   return (
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.footer__bottom}>
-            <Socials contextClassItem={style.footer_socials_item} title='Мы в соцсетях' iconsSize='24' />
+            <Socials contextClassItem={style.footer_socials_item} title='Мы в соцсетях' width='24' height='24' />
             <Payment />
           </div>
         </div>

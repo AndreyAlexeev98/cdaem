@@ -4,13 +4,13 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import IconExclamation from "../../components/shared/icons/exclamation/exclamation";
-import InputAuth from '../../components/shared/Input-auth/Input-auth.jsx';
-import IconUser from '../../components/shared/icons/user/user.jsx';
-import IconMail from '../../components/shared/icons/mail/mail.jsx';
-import IconPassword from '../../components/shared/icons/password/password.jsx';
+import IconExclamation from "../../components/shared/icons/Exclamation/Exclamation";
+import InputAuth from '../../components/shared/Input-auth/Input-auth';
+import IconUser from '../../components/shared/icons/User/User';
+import IconMail from '../../components/shared/icons/Mail/Mail';
+import IconPassword from '../../components/shared/icons/Password/Password';
 
-import style from './signup.module.scss'
+import style from './Signup.module.scss'
 
 const SignUp = () => {
 

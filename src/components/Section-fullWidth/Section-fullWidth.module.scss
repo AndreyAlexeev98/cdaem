@@ -1,0 +1,60 @@
+.root {
+  background: url("/images/pictures/mask-group.svg") center center/cover no-repeat,
+  linear-gradient(0deg, rgba(126, 106, 243, 1) 1.04%, rgba(101, 64, 205, 1) 100%);
+  padding-top: 74px;
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.decor {
+  position: absolute;
+  top: 46px;
+  right: 140px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.link {
+  background: #FFFFFF;
+  border-radius: 19px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1E2123;
+  transition: color .3s;
+  width: max-content;
+  margin: 0 auto;
+  &:hover {
+    color: #FFD54F;
+    transition: color .3s;
+  }
+}
+
+.link__icon {
+  margin-right: 12px;
+  color: #FFD54F;
+}
+
+.link__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}

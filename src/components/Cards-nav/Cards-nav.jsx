@@ -2,8 +2,7 @@ import PictureRooms from '../../images/pictures/rooms.png';
 import PictureHouses from '../../images/pictures/houses.png';
 import PictureBaths from '../../images/pictures/baths.png';
 import PictureCars from '../../images/pictures/cars.png';
-import IconArrow from '../shared/icons/arrow/arrow';
-import IconManyPoints from '../shared/icons/many-points/many-points';
+import IconArrow from '../shared/icons/Arrow/Arrow';
 
 import style from './Cards-nav.module.scss';
 

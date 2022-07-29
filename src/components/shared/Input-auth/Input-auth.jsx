@@ -1,5 +1,5 @@
 import React from "react";
-import IconExclamation from '../../shared/icons/exclamation/exclamation.jsx';
+import IconExclamation from '../../shared/icons/Exclamation/Exclamation';
 
 import style from './Input-auth.module.scss';
 

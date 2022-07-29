@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from "classnames";
 
-import IconMainLogo from '../main-logo/main-logo.jsx';
-import Menu from '../menu/menu.jsx';
-import NavList from '../nav-list/nav-list.jsx';
-import NAV_FOR_HEADER from '../../../data/nav-for-header.js';
+import IconMainLogo from '../Main-logo/Main-logo';
+import Menu from '../Menu/Menu';
+import NavList from '../Nav-list/Nav-list';
+import NAV_FOR_HEADER from '../../../data/nav-for-header';
 import MENU_HEADER from '../../../data/menu-for-header';
-import IconHeart from '../icons/heart/heart.jsx';
+import IconHeart from '../icons/Heart/Heart';
 
-import style from './header.module.scss'
+import style from './Header.module.scss'
 
 const Header = () => {
   return (

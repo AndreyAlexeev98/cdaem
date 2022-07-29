@@ -4,11 +4,11 @@ import { useForm, FormProvider } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import Input from "../shared/Input/Input.jsx";
-import IconUser from "../shared/icons/user/user.jsx";
-import IconMail from "../shared/icons/mail/mail.jsx";
+import Input from "../shared/Input/Input";
+import IconUser from "../shared/icons/User/User";
+import IconMail from "../shared/icons/Mail/Mail";
 
-import style from "./form.module.scss";
+import style from "./Form.module.scss";
 
 const Form = ( {openModal} ) => {
 
@@ -25,7 +25,7 @@ const Form = ( {openModal} ) => {
     },
   });
 
-  const { handleSubmit, control, isValid, isDirty, touched, reset } = methods;
+  const { handleSubmit, control, reset } = methods;
 
   const onSubmit = (data) => {
     if (data) {
@@ -48,8 +48,6 @@ const Form = ( {openModal} ) => {
     let elem = inputWrapLink.current;
     elem.classList.remove('custom_focus')
   }
-
-  // const [open, setOpen] = useState(false); // для открытия модалки
 
   return (
     <FormProvider {...methods}>

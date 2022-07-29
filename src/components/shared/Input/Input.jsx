@@ -1,6 +1,7 @@
 import React from "react";
 import { Controller, useFormContext  } from "react-hook-form";
-import IconExclamation from '../../shared/icons/exclamation/exclamation.jsx';
+
+import IconExclamation from '../../shared/icons/Exclamation/Exclamation';
 
 import style from './Input.module.scss';
 

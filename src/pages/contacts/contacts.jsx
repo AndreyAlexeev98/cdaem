@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 import classNames from "classnames";
 
-import Modal from "../../components/shared/modal-form-send/modal-form-send.jsx";
-import Socials from "../../components/shared/socials/socials.jsx";
-import Messangers from "../../components/shared/messengers/messengers.jsx"
-import Form from "../../components/form/form.jsx"
+import Modal from "../../components/shared/Modal-form-send/Modal-form-send";
+import Socials from "../../components/shared/Socials/Socials";
+import Messangers from "../../components/shared/Messengers/Messengers"
+import Form from "../../components/Form/Form"
 
-import styles from "./contacts.module.scss"
+import styles from "./Contacts.module.scss"
 
 const Contacts = () => {
 
@@ -22,22 +22,22 @@ const Contacts = () => {
           <div className={styles.data}>
             <ul>
               <li className={classNames(styles.data__item, styles.data__item_address)}>
-                <div className={styles.icon}></div>
+                <div className={styles.icon} />
                 <span className={styles.text}>220068, РБ, г. Минск, ул. Осипенко, 21, кв.23</span>  
               </li>
               <li className={classNames(styles.data__item, styles.data__item_phones)}> 
-                <div className={styles.icon}></div>
+                <div className={styles.icon} />
                 <span className={styles.text}>
                   <a href="tel:375296214833" className={styles.phone}>+375 29 621-48-33</a> 
                 </span>
-                <Messangers contextClassList={styles.messangers_list} contextClassItem={styles.messangers_item} iconsSize='16' />
+                <Messangers contextClassList={styles.messangers_list} contextClassItem={styles.messangers_item} width='16' height='16' />
               </li>
               <li className={classNames(styles.data__item, styles.data__item_email)}>
-                <div className={styles.icon}></div>
+                <div className={styles.icon} />
                 <span className={styles.text}><a href="mailto:sdaem@sdaem.by">sdaem@sdaem.by</a></span>  
               </li>
               <li className={classNames(styles.data__item, styles.data__item_time)}>
-                <div className={styles.icon}></div>
+                <div className={styles.icon} />
                 <div className={styles.text}><div className={styles.small}>Режим работы:</div>08:00-22:00</div>
               </li>
             </ul>
@@ -56,7 +56,7 @@ const Contacts = () => {
           <Form openModal={setOpen}/>
         </div>
         <div className={styles.socials}>
-          <Socials contextClassList={styles.socials_list} contextClassItem={styles.socials_item} iconsSize='20' />
+          <Socials contextClassList={styles.socials_list} contextClassItem={styles.socials_item} width='20' height='20'  />
         </div>
       </div>
       <Modal open={open} onClose={()=> setOpen(false)}>Мы свяжемся с вами в ближайшее время.</Modal>

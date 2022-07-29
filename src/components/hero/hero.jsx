@@ -1,10 +1,10 @@
 import classNames from "classnames";
 
-import IconPointer from '../shared/icons/pointer/pointer.jsx';
-import IconSettings from '../shared/icons/settings/settings.jsx';
-import IconArrow from '../shared/icons/arrow/arrow.jsx';
+import IconPointer from '../shared/icons/Pointer/Pointer';
+import IconSettings from '../shared/icons/Settings/Settings';
+import IconArrow from '../shared/icons/Arrow/Arrow';
 
-import style from './hero.module.scss';
+import style from './Hero.module.scss';
 
 const MINSK_CITY = 'Минск';
 

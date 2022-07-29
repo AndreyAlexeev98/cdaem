@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import logo from '../../../images/icons/logo.svg';
 
-import style from './main-logo.module.scss'
+import style from './Main-logo.module.scss'
 
 const IconMainLogo = ( {name, contextClass, width = '134px', height='19px'} ) => {
   return (

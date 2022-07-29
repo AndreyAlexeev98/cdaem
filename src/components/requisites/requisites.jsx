@@ -1,4 +1,4 @@
-import style from './requisites.module.scss'
+import style from './Requisites.module.scss'
 
 const Requisites = () => {
   return (

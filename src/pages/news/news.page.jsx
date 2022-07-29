@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 
 import RECOMMENDAT from '../../data/recommendations-news.js';
 import NEWS from '../../data/news-list';
-import BreadCrumbs from '../../components/shared/bread-crumbs/bread-crumbs.jsx';
-import ShareComponent from "../../components/component-share/share.jsx";
-import NewsListComponent from "../../components/news-list/news-list.jsx";
+import BreadCrumbs from '../../components/shared/Bread-crumbs/Bread-crumbs';
+import ShareComponent from "../../components/Component-share/Share";
+import NewsListComponent from "../../components/News-list/News-list";
 
 const newArrayReccomendat = [];
 for (let i = 0; i <= 2; i++) {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import style from './news-list.module.scss'
+import style from './News-list.module.scss'
 
 const NewsListComponent = ({news, loading}) => {
 

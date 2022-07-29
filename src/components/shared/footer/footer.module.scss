@@ -47,8 +47,10 @@
 
 .footer_socials_item {
   color: #1E2123;
+  transition: color .3s;
   &:hover {
     color: #664EF9;
+    transition: color .3s;
   }
 }
 

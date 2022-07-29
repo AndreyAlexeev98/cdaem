@@ -3,13 +3,13 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import classNames from 'classnames';
 
-import Checkbox from "../../components/checkbox/checkbox.jsx";
-import IconUser from '../../components/shared/icons/user/user.jsx';
-import IconPassword from '../../components/shared/icons/password/password.jsx';
-import IconExclamation from "../../components/shared/icons/exclamation/exclamation";
-import InputAuth from '../../components/shared/Input-auth/Input-auth.jsx';
+import Checkbox from "../../components/Checkbox/Checkbox";
+import IconUser from '../../components/shared/icons/User/User';
+import IconPassword from '../../components/shared/icons/Password/Password';
+import IconExclamation from "../../components/shared/icons/Exclamation/Exclamation";
+import InputAuth from '../../components/shared/Input-auth/Input-auth';
 
-import style from './login.module.scss'
+import style from './Login.module.scss'
 
 const Login = () => {
 

@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react';
 import classnames from 'classnames';
 
-import BreadCrumbs from '../../components/shared/bread-crumbs/bread-crumbs.jsx';
-import NewsListComponent from '../../components/news-list/news-list.jsx';
+import BreadCrumbs from '../../components/shared/Bread-crumbs/Bread-crumbs';
+import NewsListComponent from '../../components/News-list/News-list';
 import NewsListData from '../../data/news-list.js';
-import Pagination from '../../components/pagination/pagination.jsx';
+import Pagination from '../../components/Pagination/Pagination';
 
-import style from './news-list.page.module.scss';
+import style from './News-list.page.module.scss';
 
 const NewsListPage = () => {
 
@@ -51,7 +51,7 @@ const NewsListPage = () => {
           <div className={style.search_news__input_wrapper}>
             <input className={style.search_news__input} type="text" placeholder='Поиск по статьям' />
             <button className={style.search_news__btn} type="button">
-              <span></span>
+              <span />
             </button>
           </div>
         </div>

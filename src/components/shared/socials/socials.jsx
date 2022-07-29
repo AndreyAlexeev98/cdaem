@@ -1,29 +1,29 @@
 import classNames from "classnames";
 
-import IconVk from '../icons/vk/vk.jsx';
-import IconFacebook from '../icons/facebook/facebook_stroke';
-import IconInsta from '../icons/insta/insta.jsx';
+import IconVk from '../icons/Vk/Vk';
+import IconFacebook from '../icons/Facebook/Facebook_stroke';
+import IconInsta from '../icons/Insta/Insta';
 
-import style from './socials.module.scss'
+import style from './Socials.module.scss'
 
-const Socials = ( {contextClassList, contextClassItem,  title, iconsSize} ) => {
+const Socials = ( { contextClassList, contextClassItem, title, width, height } ) => {
   return (
     <div className={style.socials}>
-      { title != undefined && title != '' && <div className={style.socials__title}>{title}</div> }
+      { title && <div className={style.socials__title}>{title}</div> }
       <ul className={classNames(style.socials__list, contextClassList)}>
         <li className={style.socials__item}>
-          <a href='https://instagram.com' target='_blank' className={classNames(style.socials__link, contextClassItem)} >
-            <IconInsta className={style.socials__img} width={iconsSize} height={iconsSize} />
+          <a href='https://instagram.com' target='_blank' rel='noreferrer' className={classNames(style.socials__link, contextClassItem)} >
+            <IconInsta className={style.socials__img} width={width} height={height} />
           </a>
         </li>
         <li className={style.socials__item}>
-          <a href='https://vk.com/' target='_blank' className={classNames(style.socials__link, contextClassItem)}>
-            <IconVk className={style.socials__img} width={iconsSize} height={iconsSize} />
+          <a href='https://vk.com/' target='_blank' rel='noreferrer' className={classNames(style.socials__link, contextClassItem)}>
+            <IconVk className={style.socials__img} width={width} height={height} />
           </a>
         </li>
         <li className={style.socials__item}>
-          <a href='https://facebook.com' target='_blank' className={classNames(style.socials__link, contextClassItem)}>
-            <IconFacebook className={style.socials__img} width={iconsSize} height={iconsSize} />
+          <a href='https://facebook.com' target='_blank' rel='noreferrer' className={classNames(style.socials__link, contextClassItem)}>
+            <IconFacebook className={style.socials__img} width={width} height={height} />
           </a>
         </li>
       </ul>

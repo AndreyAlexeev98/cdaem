@@ -5,7 +5,7 @@ import IconMastercard from '../../images/icons/payment/mastercard.png';
 import IconSecurecode from '../../images/icons/payment/securecode.png';
 import IconBelkart from '../../images/icons/payment/belkart.png';
 
-import style from './payment.module.scss'
+import style from './Payment.module.scss'
 
 const Payment = () => {
   return (

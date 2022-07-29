@@ -1,6 +1,6 @@
 import { Outlet} from "react-router-dom";
 
-import style from "./sign-in-up.module.scss"
+import style from "./Sign-in-up.module.scss"
 
 const SignInUp = () => {
   return(

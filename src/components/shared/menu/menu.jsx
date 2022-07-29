@@ -1,14 +1,14 @@
 import classNames from "classnames";
 
-import IconPointer from '../icons/pointer/pointer'
+import IconPointer from '../icons/Pointer/Pointer'
 
-import style from './menu.module.scss'
+import style from './Menu.module.scss'
 
-const Menu = (props) => {
+const Menu = ( { contextClass, list } ) => {
   return (
-    <ul className={ classNames(style.root , props.contextClass)}>
+    <ul className={ classNames(style.root , contextClass)}>
       {
-        props.list.map((item) => (
+        list.map((item) => (
           <li className={style.item} key={item.id}>
             <div className={style.name}>
               <span>{item.name}</span>
