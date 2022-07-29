@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { Link } from 'react-router-dom';
 
 import IconPointer from '../shared/icons/Pointer/Pointer';
 import IconSettings from '../shared/icons/Settings/Settings';
@@ -57,7 +58,7 @@ const Hero = () => {
               <div className={style.elem}>
                   <button className={style.settings__btn_transparent}>
                     <span className={style.settings__text}>Больше опций</span>
-                  <IconSettings className={style.settings__icon} />
+                    <IconSettings className={style.settings__icon} />
                 </button>
               </div>
             </li>
@@ -68,10 +69,10 @@ const Hero = () => {
                   <IconPointer className={style.settings__icon} />
                 </button>
               </div>
-                <button className={style.settings__btn_color}>
+                <Link to='/catalog' className={style.settings__btn_color}>
                   <span>Показать</span> 
                   <IconArrow className={style.settings__icon} />
-                </button>
+                </Link>
             </li>
           </ul>
         </div>

@@ -178,14 +178,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: default;
-  
+  cursor: pointer;
+  &:hover {
+    .icon_favorites {
+      fill: rgba(235, 87, 87, 0.4);
+      transition: fill .3s;
+    }
+  }
 }
 
 .icon_favorites {
   color: #EB5757;
   width: 15px;
   height: 14px;
+  fill: transparent;
+  transition: fill .3s;
 }
 
 .wrap {

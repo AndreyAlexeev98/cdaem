@@ -11,6 +11,7 @@ import Contacts from "./pages/Contacts/Contacts"
 import Login from "./pages/Login/Login"
 import SignUp from "./pages/Signup/Signup";
 import Confirm from "./pages/Confirm/Confirm";
+import Catalog from "./pages/Catalog/Catalog";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="news-list" element={<NewsListPage />} />
           <Route path="news-list/:id" element={<NewsPage />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="catalog" element={<Catalog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path='/login' element={<SignInUp />}>

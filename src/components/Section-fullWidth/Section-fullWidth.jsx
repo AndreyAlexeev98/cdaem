@@ -12,7 +12,7 @@ const SectionFullWidth = ( { className, decor, title, subtitle } ) => {
         { decor && <IconManyPoints className={style.decor}/> }
         <div className={style.title}>{title}</div>
         <div className={style.subtitle}>{subtitle}</div>
-        <Link to='/' className={style.link}>
+        <Link to='/map' className={style.link}>
           <IconPointer className={style.link__icon} />
           <span className={style.link__text}>Открыть карту</span>
         </Link>

@@ -1,0 +1,49 @@
+.root {
+  background: linear-gradient(90deg, rgba(148, 175, 255, .1) 0%, rgba(78, 100, 249, .1) 94.5%);
+  padding: 45px 0 57px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  color: #1E2123;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #1E2123;
+  margin-bottom: 25px;
+}
+
+.list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: rgba(102, 78, 249, 0.1);
+  border-radius: 17px;
+  transition: background-color .3s;
+  &:hover {
+    background-color: rgba(102, 78, 249, 0.2);
+    transition: background-color .3s;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 100%;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #664EF9;
+  transition: color .3s;
+  :hover {
+    color: #612BFB;
+    transition: color .3s;
+  }
+}
