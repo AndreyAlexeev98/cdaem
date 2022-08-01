@@ -5,12 +5,17 @@ import SectionFullWidth from '../../components/Section-fullWidth/Section-fullWid
 import SectionAdvantages from '../../components/Section-advantages/Section-advantages';
 import SectionAbout from '../../components/Section-about/Section-about';
 
+// for test
+
+import Test from '../../test';
+
 import style from './Home.module.scss';
 
 const Home = () => {
   return (
     <div >
       <div className='container'>
+        <Test />
         <Hero />
         <NavSection />
         <SectionRent />

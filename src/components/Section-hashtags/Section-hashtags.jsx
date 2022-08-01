@@ -4,7 +4,22 @@ import style from './Section-hashtags.module.scss';
 
 const Hashtags = () => {
 
-  const listHashtags = [ 'Недорогие', '1-комнатные', '2-комнатные', '3-комнатные', '4-комнатные', '5-комнатные', 'Заводской р.', 'Ленинский р.',  'Московский р.', 'Октябрьский р.', 'Партизанский р.', 'Первомайский р.', 'Советский р.', 'Фрунзенский р.', 'Центральный р.' ]
+  const listHashtags = [ 
+  { id: "1", name: "Недорогие"},
+  { id: "2", name: "1-комнатные"}, 
+  { id: "3", name: "2-комнатные"}, 
+  { id: "4", name: "3-комнатные"}, 
+  { id: "5", name: "4-комнатные"}, 
+  { id: "6", name: "5-комнатные"}, 
+  { id: "7", name: "Заводской р"}, 
+  { id: "8", name: "Ленинский р"},  
+  { id: "9", name: "Московский р"}, 
+  { id: "10", name: "Октябрьский р"}, 
+  { id: "11", name: "Партизанский р"}, 
+  { id: "12", name: "Первомайский р"}, 
+  { id: "13", name: "Советский р"}, 
+  { id: "14", name: "Фрунзенский р"}, 
+  { id: "15", name: "Центральный р"} ]
 
   return (
     <section className={style.root}>
@@ -15,8 +30,8 @@ const Hashtags = () => {
         <ul className={style.list}>
           {
             listHashtags.map((item) => (
-              <li className={style.item}>
-                <button className={style.btn}>{item}</button>
+              <li className={style.item} key={item.id}>
+                <button className={style.btn}>{item.name}</button>
               </li>
             ))
           }
