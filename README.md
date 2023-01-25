@@ -1,9 +1,10 @@
 # To launch the project:
 
-1. git clone https://github.com/AndreyAlexeev98/cdaem.git
-2. cd cdaem/
-3. `npm start`
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. `$ git clone https://github.com/AndreyAlexeev98/cdaem.git`
+2. `$ cd cdaem/`- node js must be installed. Install - https://nodejs.org/en/.
+3. `$ npm install`
+4. `$ npm start`
+5. `Open [http://localhost:3000](http://localhost:3000) to view it in your browser.`
 
 # Осталось по проекту:
 

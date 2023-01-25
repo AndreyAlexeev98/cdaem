@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import IconPointer from '../shared/icons/Pointer/Pointer';
 import IconSettings from '../shared/icons/Settings/Settings';
 import IconArrow from '../shared/icons/Arrow/Arrow';
+import MultipleSelect from "../City-select/City-select";
 
 import style from './Hero.module.scss';
 
@@ -23,17 +24,23 @@ const Hero = () => {
         <div className={style.settings}>
             <ul className={style.settings__list}>
               <li className={style.settings__item}>
-                <div className={style.settings__title}>Город</div>
-              <div className={style.elem}>
-                <select className="option">
-                  <option value="minsk">{MINSK_CITY}</option>
-                  <option value="minsk">Город 2</option>
-                  <option value="minsk">Город 3</option>
-                  <option value="minsk">Город 4</option>
-                  <option value="minsk">Город 5</option>
-                </select>
-              </div>
-            </li>
+                  <div className={style.settings__title}>Город</div>
+                <div className={style.elem}>
+                  <select className="option">
+                    <option value="minsk">{MINSK_CITY}</option>
+                    <option value="minsk">Город 2</option>
+                    <option value="minsk">Город 3</option>
+                    <option value="minsk">Город 4</option>
+                    <option value="minsk">Город 5</option>
+                  </select>
+                </div>
+              </li>
+              <li className={style.settings__item}>
+                  <div className={style.settings__title}>Город</div>
+                <div className={style.elem}>
+                  <MultipleSelect />
+                </div>
+              </li>
               <li className={style.settings__item}>
                 <div className={style.settings__title}>Комнаты</div>
               <div className={style.elem}>
